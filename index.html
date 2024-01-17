@@ -1,4 +1,89 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Katik Kalkulator Matematik</title>
+</head>
+<body>
+    <header>
+        <h1><span class="bold-text">Kaltik</span> <span class="regular-text">Kalkulator Matematik</span></h1>
+    </header>
+    <div class="no-result-container">
+        <p class="welcome-text-big">Welcome to Kaltik</p>
+        <p>Hai Sobat, Selamat datang di Kaltik!</p>
+        <p>Sebuah website sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar persegi.</p>
 
-/* Untuk test git */
-/* Ada perubahan html */
+        <div class="calculation-section">
+            <h2 class="calculation-header">Luas Persegi</h2>
+            <img src="asset/persegi.jpg" alt="Luas Persegi Image" class="calculation-image">
+            <p class="calculation-imgDes">Bujur Sangkar</p>
+
+            <div>
+            <p class="calculation-text">Rumus Luas Persegi yaitu:</p>
+            </div>
+
+            <div>
+                <p class="calculation-rumus"><b>L = S x S</b></p>
+            </div>
+
+            <p class="calculation-text">Di mana:</p>
+            <p class="calculation-text">L= Luas</p>
+            <p class="calculation-text">S= Sisi</p>
+
+            <h1>Hitung Luas Persegi</h1>
+
+            <div class="input-box">
+                <input type="number" id="nilaiSisiLuas" name="nilaiSisi" placeholder="Nilai Sisi" onkeydown="handleKeyPress(event)">
+            </div>
+
+            <div id="resultContainerLuas" class="result-container"></div>
+
+            <div class="button-container">
+                <button class="hitung-button" onclick="hitungLuas()">Hitung</button>
+                <div class="reset-button-container">
+                    <button class="reset-button" onclick="resetLuas()">Reset</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="calculation-section">
+            <h2 class="calculation-header">Keliling Persegi</h2>
+            <img src="Asset/persegi.jpg" alt="Keliling Persegi Image" class="calculation-image">
+            <p class="calculation-imgDes">Bujur Sangkar</p>
+
+            <div>
+            <p class="calculation-text">Rumus Keliling Persegi yaitu:</p>
+            </div>
+
+            <div>
+                <p class="calculation-rumus"><b>L = 4 x S</b></p>
+            </div>
+
+            <p class="calculation-text">Di mana:</p>
+            <p class="calculation-text">K= Keliling</p>
+            <p class="calculation-text">S= Sisi</p>
+
+            <h1>Hitung Keliling Persegi</h1>
+
+            <div class="input-box">
+            <input type="number" id="nilaiSisiKeliling" name="nilaiSisi" placeholder="Nilai Sisi" onkeydown="handleKeyPress(event)">
+            </div>
+
+            <div id="resultContainerKeliling" class="result-container"></div>
+
+            <div class="button-container">
+                <button class="hitung-button" onclick="hitungKeliling()">Hitung</button>
+                <div class="reset-button-container">
+                    <button class="reset-button" onclick="resetKeliling()">Reset</button>
+                </div>
+            </div>
+
+        </div>
+    
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
