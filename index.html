@@ -10,15 +10,16 @@
     <header>
         <h1><span class="bold-text">Kaltik</span> <span class="regular-text">Kalkulator Matematik</span></h1>
     </header>
+
     <div class="no-result-container">
         <p class="welcome-text-big">Welcome to Kaltik</p>
         <p>Hai Sobat, Selamat datang di Kaltik!</p>
         <p>Sebuah website sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar persegi.</p>
 
-        <div class="calculation-section">
+        <div class="calculation-section-vertical">
             <h2 class="calculation-header">Luas Persegi</h2>
-            <img src="asset/persegi.jpg" alt="Luas Persegi Image" class="calculation-image">
-            <p class="calculation-imgDes">Bujur Sangkar</p>
+            <img src="asset/persegi abcd.png" alt="Luas Persegi Image" class="calculation-image">
+            <p class="calculation-imgDes">Persegi ABCD</p>
 
             <div>
             <p class="calculation-text">Rumus Luas Persegi yaitu:</p>
@@ -28,11 +29,13 @@
                 <p class="calculation-rumus"><b>L = S x S</b></p>
             </div>
 
-            <p class="calculation-text">Di mana:</p>
-            <p class="calculation-text">L= Luas</p>
-            <p class="calculation-text">S= Sisi</p>
+            <p class="calculation-text">Dengan:</p>
+            <p class="calculation-text">L = Luas</p>
+            <p class="calculation-text">S = Sisi</p>
 
-            <h1>Hitung Luas Persegi</h1>
+            <div class="calculation-section-horizontal">
+                <h1>Hitung Luas Persegi</h1>
+            </div>
 
             <div class="input-box">
                 <input type="number" id="nilaiSisiLuas" name="nilaiSisi" placeholder="Nilai Sisi" onkeydown="handleKeyPress(event)">
@@ -49,24 +52,26 @@
 
         </div>
 
-        <div class="calculation-section">
+        <div class="calculation-section-vertical">
             <h2 class="calculation-header">Keliling Persegi</h2>
-            <img src="Asset/persegi.jpg" alt="Keliling Persegi Image" class="calculation-image">
-            <p class="calculation-imgDes">Bujur Sangkar</p>
+            <img src="Asset/persegi abcd.png" alt="Keliling Persegi Image" class="calculation-image">
+            <p class="calculation-imgDes">Persegi ABCD</p>
 
             <div>
             <p class="calculation-text">Rumus Keliling Persegi yaitu:</p>
             </div>
 
             <div>
-                <p class="calculation-rumus"><b>L = 4 x S</b></p>
+                <p class="calculation-rumus"><b>K = 4 x S</b></p>
             </div>
 
-            <p class="calculation-text">Di mana:</p>
-            <p class="calculation-text">K= Keliling</p>
-            <p class="calculation-text">S= Sisi</p>
+            <p class="calculation-text">Dengan:</p>
+            <p class="calculation-text">K = Keliling</p>
+            <p class="calculation-text">S = Sisi</p>
 
-            <h1>Hitung Keliling Persegi</h1>
+            <div class="calculation-section-horizontal">
+                <h1>Hitung Keliling Persegi</h1>
+            </div>
 
             <div class="input-box">
             <input type="number" id="nilaiSisiKeliling" name="nilaiSisi" placeholder="Nilai Sisi" onkeydown="handleKeyPress(event)">
@@ -84,6 +89,7 @@
         </div>
     
     </div>
-    <script src="js/script.js"></script>
+
+    <script src="js/script.js"></script> 
 </body>
 </html>
