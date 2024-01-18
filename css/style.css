@@ -2,14 +2,14 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #F3F8FF;
 }
 
 header {
     font-family: 'Arial', sans-serif;
     text-align: center;
-    background-color: #2D9596;
-    color: #fff;
+    background-color: #340F6A;
+    color: #FFFFFF;
     padding: 20px 0;
 }
 
@@ -36,20 +36,20 @@ label {
     margin: 10px;
     cursor: pointer;
     padding: 10px;
-    border: 2px solid #9AD0C2;
+    border: 2px solid #3A1078;
     border-radius: 5px;
     transition: background-color 0.3s ease; 
-    width: 100%; 
+    width: 100%;
     box-sizing: border-box; 
 }
 
 label:hover {
-    background-color: #9AD0C2;
-    color: black;
+    background-color: #3A1078;
+    color: #000000;
 }
 
 label:active {
-    background-color: #2D9596;
+    background-color: #340F6A;
     transform: translateY(2px);
 }
 
@@ -58,20 +58,27 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked + label {
-    background-color: #2D9596;
-    color: #fff;
+    background-color: #340F6A;
+    color: #FFFFFF;
 }
 
-.calculation-section {
-    margin: 20px 0;
+.calculation-section-vertical {
+    margin: 40px 0;
     padding: 0px;
-    border: 1px solid #2D9596;
-    border-radius: 5px;
+    border: 1px solid #3A1078;
+    border-radius: 0px;
+}
+
+.calculation-section-horizontal {
+    margin: 25px 0;
+    padding: 0px;
+    border-top: 1px solid #3A1078;
+    border-radius: 0px;
 }
 
 .calculation-header {
-    background-color: #2D9596;
-    color: #fff;
+    background-color: #3A1078;
+    color: #FFFFFF;
     font-weight: bold;
     padding: 20px;
     border-radius: 0px;
@@ -114,8 +121,8 @@ input[type="radio"]:checked + label {
 }
 
 .hitung-button {
-    background-color: #2D9596; 
-    color: #fff;
+    background-color: #340F6A;
+    color: #FFFFFF;
     margin: 20px;
     padding: 10px 20px;
     border: none;
@@ -123,7 +130,7 @@ input[type="radio"]:checked + label {
 }
 
 .hitung-button:active {
-    background-color: #265073;
+    background-color: #640F6A;
     transform: translateY(2px);
 }
 
@@ -132,20 +139,25 @@ input[type="radio"]:checked + label {
 }
 
 .reset-button {
-    background-color: #c59f05; 
-    color: #fff;
+    background-color: #51C8E4; 
+    color: #FFFFFF;
     margin: 20px;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
 }
 
-.reset-button:active{
-    background-color: #e2b900;
+.reset-button:active {
+    background-color: #81C8E4;
     transform: translateY(2px);
 }
 
 .result-container {
     text-align: left;
     margin: 20px;
+}
+
+.calculation-image {
+    width: 400px;
+    height: 400px;
 }
