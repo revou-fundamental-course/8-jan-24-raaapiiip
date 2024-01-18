@@ -26,10 +26,10 @@ function hitungLuas() {
 
             resultContainer.innerHTML = 'L = S x S ' + '<br>L = ' + nilaiSisi + ' x ' + nilaiSisi + '<br>L = ' + luas;
         } else {
-            resultContainer.innerHTML = 'Please enter a valid number.';
+            resultContainer.innerHTML = 'Mohon masukkan angka yang valid.';
         }
     } else {
-        resultContainer.innerHTML = 'Please enter a number.';
+        resultContainer.innerHTML = 'Mohon masukkan angka.';
     }
 }
 
@@ -52,10 +52,10 @@ function hitungKeliling() {
 
             resultContainer.innerHTML = 'K = 4 x S' + '<br>K = 4 x ' + nilaiSisi + '<br>K = ' + keliling;
         } else {
-            resultContainer.innerHTML = 'Please enter a valid number.';
+            resultContainer.innerHTML = 'Mohon masukkan angka yang valid.';
         }
     } else {
-        resultContainer.innerHTML = 'Please enter a number.';
+        resultContainer.innerHTML = 'Mohon masukkan angka.';
     }
 }
 
